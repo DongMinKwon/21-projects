@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/deposit.css">
+    <title></title>
+  </head>
+  <body id="putmoney">
+    <div class="put">
+      <Center>
+        <div>Enter the specified amount of money into the ATM</div>
+        <button type="button" class="ok" name="button">OK</button>
+      </Center>
+      <script>
+        let ok = document.querySelector(".ok");
+        ok.addEventListener('click', function(){
+          location.href = "./complete.html?pg:deposit";
+        })
+      </script>
+    </div>
+  </body>
+</html>

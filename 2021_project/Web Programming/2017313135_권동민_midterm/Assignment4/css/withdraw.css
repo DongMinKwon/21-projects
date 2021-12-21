@@ -1,0 +1,156 @@
+body{
+  background-color: rgb(236,245,255);
+}
+
+.container{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+
+#left{
+  top: 40px;
+  left: 20px;
+}
+
+#right{
+  top: 40px;
+  right: 20px;
+}
+
+#center{
+  top: 15px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.container>span:first-child{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.box{
+  background-color: darkblue;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: black;
+  width: 110px;
+  height: 65px;
+  font-size: 30px;
+  margin-bottom: 70px;
+  color: white;
+  display: table;
+  text-align: center;
+}
+
+.box:hover{
+  background-color: gray;
+}
+
+.box>span{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.back{
+  background-color: orange;
+  border-color: red;
+  border-width: 5px;
+  border-radius: 5px;
+  width: 110px;
+  height: 65px;
+  font-size: 30px;
+  color: white;
+}
+.back:hover{
+  background-color: darkorange;
+}
+
+img{
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+
+#up100:hover{content: url("../assets/uparrow100copyhover.png");}
+#up20:hover{content: url("../assets/uparrow20copyhover.png");}
+#down20:hover{content: url("../assets/downarrow20copyhover.png");}
+#down100:hover{content: url("../assets/downarrow100copyhover.png");}
+
+.money{
+  background-color: white;
+  width: 130px;
+  height: 50px;
+  border-style: solid;
+  margin-bottom: 20px;
+  text-align: center;
+  display: table;
+  font-size: 30px;
+}
+.money>span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.enter{
+  position: fixed;
+  top: 350px;
+  left: 60vw;
+  width: 110px;
+  height: 65px;
+  background-color: lightgreen;
+  color: white;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+.enter:hover{
+  background-color: green;
+}
+
+
+/* confirm css */
+
+.confirm{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 80vw;
+}
+
+.confirm>span:first-child{
+  color: rgb(86,165,235);
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#text{
+  font-size: 60px;
+}
+
+.transfer{
+  font-size: 50px;
+  display:none;
+}
+
+.confirm>div{
+  display: flex;
+}
+
+.confirm>div>button{
+  margin: 20px;
+}
+
+#yes{
+  position: static;
+}
+#no{
+  position: static;
+}

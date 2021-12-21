@@ -1,0 +1,114 @@
+.background{
+  /* set background color and set center */
+  position: relative;
+  margin: 0 auto;
+  background-color: rgb(236,245,255);
+  width: 100vw;
+  height: 100vh;
+}
+
+.quiz_container{
+
+  display: flex;
+  flex-direction: column;
+
+  /* for being center */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35vw;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  align-items: stretch;
+}
+
+.question>div:first-child{
+  text-align: center;
+}
+
+.level{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+}
+
+.level>div{
+  /* set default border top, bottom, set flex-weight */
+
+  background-color: rgb(236,245,255);
+  border-width: 2px 0 2px;
+  border-style: solid;
+  border-color: rgb(86,165,235);
+  flex-grow: 1;
+  width: 31.5px;
+  height: 22px;
+}
+
+.level>div:first-child{
+  /* if first div, set border left, top, bottom */
+  border-width: 2px 0px 2px 2px;
+  border-color: rgb(86,165,235);
+  background-color: rgb(86,165,235);
+}
+
+.level>div:last-child{
+  /* if last div, set border right, top, bottom */
+  border-width: 2px 2px 2px 0px;
+  border-color: rgb(86,165,235);
+}
+
+.score>div:last-child{
+  font-size: 30px;
+  text-align: center;
+  color: rgb(86,165,235);
+  font-weight: bold;
+}
+
+.quiz{
+  margin: 20px 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.tile{
+  display: flex;
+  align-items: stretch;
+  font-size: 15px;
+  background-color: white;
+  margin: 5px 0 5px;
+}
+
+/* set hover(mouse on the div) */
+.tile:hover{
+  box-shadow: 1px 4px 6px 4px rgba(86,165,235, 0.2);
+}
+
+.tile>div:first-child{
+  display: table;
+  background-color: rgb(86,165,235);
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+.tile>div>span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tile>div:last-child{
+  padding: 10px;
+  flex: 9;
+}

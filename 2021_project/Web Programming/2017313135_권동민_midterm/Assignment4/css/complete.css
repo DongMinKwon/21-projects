@@ -1,0 +1,55 @@
+body{
+  background-color: rgb(236,245,255);
+}
+
+.container{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container>span{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+img{
+  width:250px;
+  margin-bottom: 50px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+}
+
+.buttons>button{
+  margin-left: 50px;
+}
+
+#home{
+  background-color: darkblue;
+  border-radius: 5px;
+  border-color: black;
+  width: 80px;
+  height: 50px;
+  color: white;
+}
+
+#again{
+  background-color: black;
+  border-radius: 5px;
+  border-color: black;
+  width: 250px;
+  height: 50px;
+  color: white;
+}
+
+#gofirst{
+  background-color: orange;
+  border-radius: 5px;
+  border-color: red;
+  width: 130px;
+  height: 50px;
+  color: white;
+}

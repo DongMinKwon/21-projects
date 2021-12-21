@@ -1,0 +1,77 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#title{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container>input{
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.numbers{
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: repeat(4, 60px);
+  grid-gap: 10px 10px;
+}
+
+.btn:nth-child(12){
+  color: red;
+}
+
+.btn:nth-child(13){
+  grid-column: 1/4;
+  height: 50px;
+}
+
+.back{
+  position: fixed;
+  top: 500px;
+  left: 950px;
+  background-color: orange;
+  border-radius: 5px;
+  border-color: red;
+  width: 130px;
+  height: 40px;
+  color: white;
+}
+
+/* putmoney css */
+#putmoney{
+  background-color: rgb(236,245,255);
+}
+
+.put{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.put>Center>div{
+  margin-top: 20px;
+}
+
+.ok{
+  margin-top: 30px;
+  height: 40px;
+  width: 250px;
+  background-color: darkblue;
+  border-radius: 5px;
+  border-width: 3px;
+  color: white;
+}
+
+.ok:hover{
+  background-color: black;
+}

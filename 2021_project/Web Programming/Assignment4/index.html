@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/c28315cd37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="login" class="select sel-nonactive"><span>Login</span></div>
+        <div id="sign_up" class="select sel-active"><span>Sign up</span></div>
+      </div>
+      <div class="info">
+        <div class="complete">You are signed up</div>
+        <div class="align">
+          <span id="Login_txt">Sign up</span><br>
+          <span id="context">Fill in the form</span>
+        <form class="inputs" action="index.html" method="post">
+          <div class="hide">
+            <br>
+            <span>First Name</span><br>
+            <div class="input_row">
+              <input class="box" type="text" placeholder="Email"><i class="fas fa-check icon"></i>
+              <span class="message">Please enter your first name!</span>
+            </div>
+          </div>
+          <div class="hide">
+            <br>
+            <span>Last Name</span><br>
+            <div class="input_row">
+              <input class="box" type="text" placeholder="Email"><i class="fas fa-check icon"></i>
+              <span class="message">Please enter your last name!</span>
+            </div>
+          </div>
+
+          <div class="hide">
+            <br>
+            <div class="input_row">
+              <input type="radio" name="gender" value="m" id="man">
+              <label for="man">Male</label>
+              <input type="radio" name="gender" value="w" id="woman">
+              <label for="woman">Female</label>
+              <i id="radio_icon" class="fas fa-check"></i>
+              <span class="message2">Please select your gender!</span>
+            </div>
+          </div>
+
+          <div>
+            <br>
+            <span>Email</span><br>
+            <div class="input_row">
+              <input class="box" type="text" placeholder="Email"><i class="fas fa-check icon"></i>
+              <span class="message">Please enter your email!</span>
+            </div>
+          </div>
+
+          <div>
+            <br>
+            <span>Password</span><br>
+            <div class="input_row">
+              <input class="box" type="password" placeholder="Password"><i class="fas fa-check icon"></i>
+              <span class="message">Please enter your password!</span>
+            </div>
+          </div>
+          <div class="hide">
+            <br>
+            <span>Confirm Password</span><br>
+            <div class="input_row">
+              <input class="box" type="password" placeholder="Password"><i class="fas fa-check icon"></i>
+              <span class="message">Please re-enter your email!</span>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="btn"><span>sign up</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
